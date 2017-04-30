@@ -15,11 +15,8 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="AppTheme.Base">
-
-    </style>
 
 
     <style name="AppTheme.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
@@ -29,6 +26,9 @@
         <item name="colorAccent">@color/theme_accent</item>
 
 
+    </style>
+    <style name="AppTheme.Base.Detail">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
     </style>
 
 </resources>
