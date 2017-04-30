@@ -12,7 +12,6 @@
     android:elevation="4dp"
     android:foreground="?selectableItemBackground"
     android:id="@+id/cardView"
-    android:transitionName="@string/shared_photo"
     tools:targetApi="lollipop">
 
     <LinearLayout

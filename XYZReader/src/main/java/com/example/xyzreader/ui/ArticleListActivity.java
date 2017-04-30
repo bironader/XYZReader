@@ -70,7 +70,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -157,9 +157,9 @@ public class ArticleListActivity extends AppCompatActivity implements
                 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                 @Override
                 public void onClick(View view) {
-                    Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(activity, vh.cardView, vh.cardView.getTransitionName()).toBundle();
+//                    Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(activity, vh.cardView, vh.cardView.getTransitionName()).toBundle();
                     startActivity(new Intent(Intent.ACTION_VIEW,
-                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))),bundle);
+                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
 
                 }
             });
